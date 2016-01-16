@@ -90,7 +90,7 @@
         <!-- Features Heading -->
         <div class="row">
             <div class="col-md-10 col-md-offset-1 splash-row-heading">
-                Features You'll Adore
+                Latest Tutorials
             </div>
         </div>
 

@@ -25,8 +25,8 @@
 		<!-- Teams Are Disabled Or User Is On Team -->
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
-				<div class="panel panel-default">
-					<div class="panel-heading">Dashboard</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading"><i class="fa fa-btn fa-video-camera"></i>Latest Tutorials</div>
 
 					<div class="panel-body">
 						Your Application's Dashboard.
