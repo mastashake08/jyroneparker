@@ -160,12 +160,14 @@ class SparkServiceProvider extends ServiceProvider
                      'Get access to my virtual office hours!',
                  ]);
 
-         Spark::plan('Premium - Yearly', 'jyrone-parker-yearly')->price(99)
+         Spark::plan('Premium - Yearly', 'jyrone-parker-yearly')->price(99)->yearly()
+
                   ->trialDays(7)
                   ->features([
-                      'Save over 17%!',
+                      'Save over 17% off regular membership!',
                       'Free T-Shirt!',
-                      
+                      '10% discount off everything in the store!'
+
                 ]);
     }
 }
