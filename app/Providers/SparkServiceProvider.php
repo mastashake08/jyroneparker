@@ -16,11 +16,11 @@ class SparkServiceProvider extends ServiceProvider
      * @var array
      */
     protected $invoiceWith = [
-        'vendor' => 'Your Company',
-        'product' => 'Your Product',
-        'street' => 'PO Box 111',
-        'location' => 'Your Town, 12345',
-        'phone' => '555-555-5555',
+        'vendor' => 'Jyrone Parker',
+        'product' => 'Code Blog',
+        'street' => '113 East Mason Ave.',
+        'location' => 'Danville, 40422',
+        'phone' => '859-402-4863',
     ];
 
     /**
@@ -103,8 +103,8 @@ class SparkServiceProvider extends ServiceProvider
         Spark::settingsTabs()->configure(function ($tabs) {
             return [
                 $tabs->profile(),
-                $tabs->teams(),
-                $tabs->security(),
+                //$tabs->teams(),
+                //$tabs->security(),
                 $tabs->subscription(),
                 // $tabs->make('Name', 'view', 'fa-icon'),
             ];
@@ -145,19 +145,27 @@ class SparkServiceProvider extends ServiceProvider
      */
     protected function customizeSubscriptionPlans()
     {
-        // Spark::free()
-        //         ->features([
-        //             'Feature 1',
-        //             'Feature 2',
-        //             'Feature 3',
-        //         ]);
+         Spark::free()
+                 ->features([
+                     'Learn to code on your own time!',
+                     'New content offered weekly!',
+                     'Learn best practices and current industry standards!',
+                 ]);
 
-        // Spark::plan('Basic', 'stripe-id')->price(10)
-        //         ->trialDays(7)
-        //         ->features([
-        //             'Feature 1',
-        //             'Feature 2',
-        //             'Feature 3',
-        //         ]);
+         Spark::plan('Premium - Monthly', 'jyrone-parker-blog-monthly')->price(9.99)
+                 ->trialDays(7)
+                 ->features([
+                     'Get access to wider array of tutorials!',
+                     'Instructional videos!',
+                     'Get access to my virtual office hours!',
+                 ]);
+
+         Spark::plan('Premium - Yearly', 'jyrone-parker-yearly')->price(99)
+                  ->trialDays(7)
+                  ->features([
+                      'Save over 17%!',
+                      'Free T-Shirt!',
+                      
+                ]);
     }
 }
