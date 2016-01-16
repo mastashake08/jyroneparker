@@ -25,5 +25,6 @@ $factory->define(App\Post::class, function ($faker) {
     'title' => $faker->sentence(mt_rand(3, 10)),
     'content' => 'https://www.youtube.com/watch?v=gR9QdLqXx-I',
     'published_at' => $faker->dateTimeBetween('-1 month', '+3 days'),
+    'premium' => false
   ];
 });
