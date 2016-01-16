@@ -157,7 +157,7 @@ class SparkServiceProvider extends ServiceProvider
                  ->trialDays(7)
                  ->features([
                      'Get access to wider array of tutorials!',
-                     'Instructional videos!',
+                     'Get added to my email list!',
                      'Get access to my virtual office hours!',
                  ]);
 

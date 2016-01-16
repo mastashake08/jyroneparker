@@ -28,7 +28,7 @@ Route::get('/', function () {
 
 
 Route::group(['middleware' => 'web'], function () {
-    Route::get('home', ['middleware' => 'auth', function () {
-        return view('home');
-    }]);
+	  Route::get('posts/{slug}','PostController@getPost');
+
+    Route::get('home', ['middleware' => 'auth', 'uses' => 'PostController@index']);
 });
