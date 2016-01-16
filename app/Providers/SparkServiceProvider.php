@@ -145,6 +145,7 @@ class SparkServiceProvider extends ServiceProvider
      */
     protected function customizeSubscriptionPlans()
     {
+         Spark::promotion('50-percent-off-membership');
          Spark::free()
                  ->features([
                      'Learn to code on your own time!',
