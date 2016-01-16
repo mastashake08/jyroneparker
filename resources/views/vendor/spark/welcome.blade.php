@@ -28,7 +28,7 @@
         <div class="row splash-nav">
             <div class="col-md-10 col-md-offset-1">
                 <div class="pull-left splash-brand">
-                    <i class="fa fa-btn fa-sun-o"></i>Jyrone Parker Code Academy
+                    <i class="fa fa-btn fa-code"></i>Parker Code Academy
                 </div>
 
                 <div class="navbar-header">
@@ -57,12 +57,15 @@
         <div class="row splash-inspiration-row">
             <div class="col-md-4 col-md-offset-1">
                 <div id="splash-inspiration-heading">
-                    Create Amazing Experiences.
+                    Never Let Limited Minds Limt Your Success.
                 </div>
 
                 <div id="splash-inspiration-text">
-                    Spark provides the perfect starting point for your next big idea. Forget all the
-                    boilerplate and focus on what matters: your application.
+                    Learning to code is a very valuable investment. Unfortunately
+                    for most people it is also a very expensive one. My code academy is an
+                    inexpensive alternative to get you ready for industry level computer science work.
+                    I have held the role of senior software engineer for Apple, Dell, and Sephora just to name a few.
+                    My knowledge of industry best practices is nulli secondus. Stop wasting your time and money with those other guys.
                 </div>
             </div>
 
@@ -255,7 +258,7 @@
                 <div class="col-md-10 col-md-offset-1 text-center">
                     <a href="/register">
                         <button class="btn btn-primary splash-get-started-btn">
-                            Get Started!
+                            Start Coding Your Future!
                         </button>
                     </a>
                 </div>

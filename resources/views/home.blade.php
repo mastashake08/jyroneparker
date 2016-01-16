@@ -1,5 +1,5 @@
 @extends('spark::layouts.app')
-
+@section('title','Latest Videos')
 @section('content')
 <!-- Main Content -->
 <div class="container spark-screen">
