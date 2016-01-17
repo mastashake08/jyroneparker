@@ -24,7 +24,7 @@
   "headline": "{{$post->title}}",
   "image": {
     "@type": "ImageObject",
-    "url": "https://en.gravatar.com/userimage/70717632/53adbdecac04d4ffbe3449993c901a73.jpg",
+    "url": "https://en.gravatar.com/avatar/e0c48dc4005b3a0b83a3ed4123bce29e?s=500",
     "height": 800,
     "width": 800
   },
@@ -57,7 +57,10 @@
     <h1>{{ $post->title }}</h1>
     <h5>{{ $post->published_at->format('M jS Y g:ia') }}</h5>
     <hr>
-    <video controls width="100%" src="{{asset('vids/'.$post->content)}}"></video>
+    <video controls poster="/img/code.jpg" width="100%" src="{{asset('vids/'.$post->content)}}"></video>
+    <hr>
+    <h2>What's This Video About?</h2>
+    <p>{{$post->description}}</p>
     <hr>
     <h2>What's This Video About?</h2>
     <p>{{$post->description}}</p>
