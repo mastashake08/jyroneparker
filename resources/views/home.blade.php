@@ -26,7 +26,7 @@
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<div class="panel panel-primary">
-					<div class="panel-heading"><i class="fa fa-btn fa-video-camera"></i>Latest Tutorials</div>
+					<div class="panel-heading"><i class="fa fa-btn fa-video-camera"></i>PHP Videocasts</div>
 
 					<div class="panel-body">
 
@@ -47,7 +47,199 @@
 
     </tbody>
   </table>
-					
+
+
+					{!! $posts->links() !!}
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="panel panel-primary">
+					<div class="panel-heading"><i class="fa fa-btn fa-video-camera"></i>Javascript Videocasts</div>
+
+					<div class="panel-body">
+
+							<table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Title</th>
+				<th>Publish Date</th>
+      </tr>
+    </thead>
+    <tbody>
+			@foreach ($posts as $post)
+			<tr>
+				<td><a href="/posts/{{$post->slug}}">{{ $post->title }}</a></td>
+				<td><em>{{ $post->published_at->format('M jS Y g:ia') }}</em></td>
+			</tr>
+			@endforeach
+
+    </tbody>
+  </table>
+
+
+					{!! $posts->links() !!}
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="panel panel-primary">
+					<div class="panel-heading"><i class="fa fa-btn fa-video-camera"></i>Laravel Videocasts</div>
+
+					<div class="panel-body">
+
+							<table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Title</th>
+				<th>Publish Date</th>
+      </tr>
+    </thead>
+    <tbody>
+			@foreach ($posts as $post)
+			<tr>
+				<td><a href="/posts/{{$post->slug}}">{{ $post->title }}</a></td>
+				<td><em>{{ $post->published_at->format('M jS Y g:ia') }}</em></td>
+			</tr>
+			@endforeach
+
+    </tbody>
+  </table>
+
+
+					{!! $posts->links() !!}
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="panel panel-primary">
+					<div class="panel-heading"><i class="fa fa-btn fa-video-camera"></i>Vue.js Videocasts</div>
+
+					<div class="panel-body">
+
+							<table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Title</th>
+				<th>Publish Date</th>
+      </tr>
+    </thead>
+    <tbody>
+			@foreach ($posts as $post)
+			<tr>
+				<td><a href="/posts/{{$post->slug}}">{{ $post->title }}</a></td>
+				<td><em>{{ $post->published_at->format('M jS Y g:ia') }}</em></td>
+			</tr>
+			@endforeach
+
+    </tbody>
+  </table>
+
+
+					{!! $posts->links() !!}
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="panel panel-primary">
+					<div class="panel-heading"><i class="fa fa-btn fa-video-camera"></i>Angular.js Videocasts</div>
+
+					<div class="panel-body">
+
+							<table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Title</th>
+				<th>Publish Date</th>
+      </tr>
+    </thead>
+    <tbody>
+			@foreach ($posts as $post)
+			<tr>
+				<td><a href="/posts/{{$post->slug}}">{{ $post->title }}</a></td>
+				<td><em>{{ $post->published_at->format('M jS Y g:ia') }}</em></td>
+			</tr>
+			@endforeach
+
+    </tbody>
+  </table>
+
+
+					{!! $posts->links() !!}
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="panel panel-primary">
+					<div class="panel-heading"><i class="fa fa-btn fa-video-camera"></i>Ionic Videocasts</div>
+
+					<div class="panel-body">
+
+							<table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Title</th>
+				<th>Publish Date</th>
+      </tr>
+    </thead>
+    <tbody>
+			@foreach ($posts as $post)
+			<tr>
+				<td><a href="/posts/{{$post->slug}}">{{ $post->title }}</a></td>
+				<td><em>{{ $post->published_at->format('M jS Y g:ia') }}</em></td>
+			</tr>
+			@endforeach
+
+    </tbody>
+  </table>
+
+
+					{!! $posts->links() !!}
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="panel panel-primary">
+					<div class="panel-heading"><i class="fa fa-btn fa-video-camera"></i>Code Tools Videocasts</div>
+
+					<div class="panel-body">
+
+							<table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Title</th>
+				<th>Publish Date</th>
+      </tr>
+    </thead>
+    <tbody>
+			@foreach ($posts as $post)
+			<tr>
+				<td><a href="/posts/{{$post->slug}}">{{ $post->title }}</a></td>
+				<td><em>{{ $post->published_at->format('M jS Y g:ia') }}</em></td>
+			</tr>
+			@endforeach
+
+    </tbody>
+  </table>
+
 
 					{!! $posts->links() !!}
 					</div>

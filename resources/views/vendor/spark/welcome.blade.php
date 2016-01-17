@@ -56,12 +56,12 @@
                 <div id="primary-nav" class="navbar-collapse collapse splash-nav-list">
                     <ul class="nav navbar-nav navbar-right inline-list">
 
-                            <li class="splash-nav-link active"><a href="/features">Features</a></li>
-                            <li class="splash-nav-link"><a href="/store">Store</a></li>
-                            <li class="splash-nav-link"><a href="/support">Support</a></li>
+                            <li class="splash-nav-link active"><a href="/features"><i class="fa fa-list"></i> Features</a></li>
+                            <li class="splash-nav-link"><a href="/store"><i class="fa fa-shopping-cart"></i> Store</a></li>
+                            <li class="splash-nav-link"><a href="/support"><i class="fa fa-life-ring"></i> Support</a></li>
 
-                        <li class="splash-nav-link splash-nav-link-highlight"><a href="/login">Login</a></li>
-                        <li class="splash-nav-link splash-nav-link-highlight-border"><a href="/register">Register</a></li>
+                        <li class="splash-nav-link splash-nav-link-highlight"><a href="/login"><i class="fa fa-sign-in"></i> Login</a></li>
+                        <li class="splash-nav-link splash-nav-link-highlight-border"><a href="/register"><i class="fa fa-user-plus"></i> Register</a></li>
                     </ul>
                 </div>
 
