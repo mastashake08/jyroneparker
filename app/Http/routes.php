@@ -15,6 +15,7 @@ Route::get('/', function () {
 	return view('spark::welcome');
 });
 
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes

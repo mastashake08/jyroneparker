@@ -23,7 +23,8 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 $factory->define(App\Post::class, function ($faker) {
   return [
     'title' => $faker->sentence(mt_rand(3, 10)),
-    'content' => 'https://www.youtube.com/watch?v=gR9QdLqXx-I',
+    'content' => 'test.ogv',
+    'description' => $faker->paragraph($nbSentences = 6, $variableNbSentences = true),
     'published_at' => $faker->dateTimeBetween('-1 month', '+3 days'),
     'premium' => false
   ];
