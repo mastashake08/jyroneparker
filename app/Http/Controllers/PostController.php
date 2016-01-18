@@ -19,7 +19,7 @@ class PostController extends Controller
     public function index(){
       $posts = Post::where('published_at', '<=', Carbon::now())
 					 ->orderBy('published_at', 'desc')
-					 ->paginate(10);
+					 ->take(10)->get();
 
         return view('home', compact('posts'));
     }

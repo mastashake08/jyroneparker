@@ -22,7 +22,7 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 
 $factory->define(App\Post::class, function ($faker) {
   return [
-    'title' => $faker->sentence(mt_rand(3, 10)),
+    'title' => $faker->sentence(mt_rand(3, 5)),
     'content' => 'test.ogv',
     'description' => $faker->paragraph($nbSentences = 6, $variableNbSentences = true),
     'published_at' => $faker->dateTimeBetween('-1 month', '+3 days'),

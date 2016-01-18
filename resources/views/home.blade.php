@@ -26,222 +26,81 @@
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<div class="panel panel-primary">
-					<div class="panel-heading"><i class="fa fa-btn fa-video-camera"></i>PHP Videocasts</div>
+					<div class="panel-heading"><i class="fa fa-btn fa-video-camera"></i>Lastest Videocasts</div>
 
 					<div class="panel-body">
+						<!-- Row -->
+						<div class="row splash-features-icon-row">
+								<div class="col-md-10 col-md-offset-1 text-center">
+										<div class="col-md-4 splash-features-feature">
+											<div class="splash-feature-heading">
+													{{$posts[0]->title}}
+											</div>
 
-							<table class="table table-condensed">
-    <thead>
-      <tr>
-        <th>Title</th>
-				<th>Publish Date</th>
-      </tr>
-    </thead>
-    <tbody>
-			@foreach ($posts as $post)
-			<tr>
-				<td><a href="/posts/{{$post->slug}}">{{ $post->title }}</a></td>
-				<td><em>{{ $post->published_at->format('M jS Y g:ia') }}</em></td>
-			</tr>
-			@endforeach
+											<div class="splash-feature-text">
+													<a href="/posts/{{$posts[0]->slug}}"><img class="img-rounded latest-screen-casts" src="https://en.gravatar.com/avatar/e0c48dc4005b3a0b83a3ed4123bce29e?s=80" /></a>
+											</div>
+										</div>
 
-    </tbody>
-  </table>
+										<div class="col-md-4 splash-features-feature">
+											<div class="splash-feature-heading">
+													{{$posts[1]->title}}
+											</div>
 
+											<div class="splash-feature-text">
+													<a href="/posts/{{$posts[1]->slug}}"><img class="img-rounded latest-screen-casts" src="https://en.gravatar.com/avatar/e0c48dc4005b3a0b83a3ed4123bce29e?s=80"/></a>
+											</div>
+										</div>
 
-					{!! $posts->links() !!}
+										<div class="col-md-4 splash-features-feature">
+											<div class="splash-feature-heading">
+													{{$posts[2]->title}}
+											</div>
+
+											<div class="splash-feature-text">
+													<a href="/posts/{{$posts[2]->slug}}"><img class="img-rounded latest-screen-casts" src="https://en.gravatar.com/avatar/e0c48dc4005b3a0b83a3ed4123bce29e?s=80" /></a>
+											</div>
+										</div>
+								</div>
+						</div>
+						<!-- Row -->
+						<div class="row splash-features-icon-row">
+								<div class="col-md-10 col-md-offset-1 text-center">
+										<div class="col-md-4 splash-features-feature">
+											<div class="splash-feature-heading">
+													{{$posts[3]->title}}
+											</div>
+
+											<div class="splash-feature-text">
+													<a href="/posts/{{$posts[3]->slug}}"><img class="img-rounded latest-screen-casts" src="https://en.gravatar.com/avatar/e0c48dc4005b3a0b83a3ed4123bce29e?s=80" /></a>
+											</div>
+										</div>
+
+										<div class="col-md-4 splash-features-feature">
+											<div class="splash-feature-heading">
+													{{$posts[4]->title}}
+											</div>
+
+											<div class="splash-feature-text">
+													<a href="/posts/{{$posts[4]->slug}}"><img class="img-rounded latest-screen-casts" src="https://en.gravatar.com/avatar/e0c48dc4005b3a0b83a3ed4123bce29e?s=80"/></a>
+											</div>
+										</div>
+
+										<div class="col-md-4 splash-features-feature">
+											<div class="splash-feature-heading">
+													{{$posts[5]->title}}
+											</div>
+
+											<div class="splash-feature-text">
+													<a href="/posts/{{$posts[5]->slug}}"><img class="img-rounded latest-screen-casts" src="https://en.gravatar.com/avatar/e0c48dc4005b3a0b83a3ed4123bce29e?s=80" /></a>
+											</div>
+										</div>
+								</div>
+						</div>
+
 					</div>
-				</div>
-			</div>
-		</div>
+						</div>
 
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<div class="panel panel-primary">
-					<div class="panel-heading"><i class="fa fa-btn fa-video-camera"></i>Javascript Videocasts</div>
-
-					<div class="panel-body">
-
-							<table class="table table-condensed">
-    <thead>
-      <tr>
-        <th>Title</th>
-				<th>Publish Date</th>
-      </tr>
-    </thead>
-    <tbody>
-			@foreach ($posts as $post)
-			<tr>
-				<td><a href="/posts/{{$post->slug}}">{{ $post->title }}</a></td>
-				<td><em>{{ $post->published_at->format('M jS Y g:ia') }}</em></td>
-			</tr>
-			@endforeach
-
-    </tbody>
-  </table>
-
-
-					{!! $posts->links() !!}
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<div class="panel panel-primary">
-					<div class="panel-heading"><i class="fa fa-btn fa-video-camera"></i>Laravel Videocasts</div>
-
-					<div class="panel-body">
-
-							<table class="table table-condensed">
-    <thead>
-      <tr>
-        <th>Title</th>
-				<th>Publish Date</th>
-      </tr>
-    </thead>
-    <tbody>
-			@foreach ($posts as $post)
-			<tr>
-				<td><a href="/posts/{{$post->slug}}">{{ $post->title }}</a></td>
-				<td><em>{{ $post->published_at->format('M jS Y g:ia') }}</em></td>
-			</tr>
-			@endforeach
-
-    </tbody>
-  </table>
-
-
-					{!! $posts->links() !!}
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<div class="panel panel-primary">
-					<div class="panel-heading"><i class="fa fa-btn fa-video-camera"></i>Vue.js Videocasts</div>
-
-					<div class="panel-body">
-
-							<table class="table table-condensed">
-    <thead>
-      <tr>
-        <th>Title</th>
-				<th>Publish Date</th>
-      </tr>
-    </thead>
-    <tbody>
-			@foreach ($posts as $post)
-			<tr>
-				<td><a href="/posts/{{$post->slug}}">{{ $post->title }}</a></td>
-				<td><em>{{ $post->published_at->format('M jS Y g:ia') }}</em></td>
-			</tr>
-			@endforeach
-
-    </tbody>
-  </table>
-
-
-					{!! $posts->links() !!}
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<div class="panel panel-primary">
-					<div class="panel-heading"><i class="fa fa-btn fa-video-camera"></i>Angular.js Videocasts</div>
-
-					<div class="panel-body">
-
-							<table class="table table-condensed">
-    <thead>
-      <tr>
-        <th>Title</th>
-				<th>Publish Date</th>
-      </tr>
-    </thead>
-    <tbody>
-			@foreach ($posts as $post)
-			<tr>
-				<td><a href="/posts/{{$post->slug}}">{{ $post->title }}</a></td>
-				<td><em>{{ $post->published_at->format('M jS Y g:ia') }}</em></td>
-			</tr>
-			@endforeach
-
-    </tbody>
-  </table>
-
-
-					{!! $posts->links() !!}
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<div class="panel panel-primary">
-					<div class="panel-heading"><i class="fa fa-btn fa-video-camera"></i>Ionic Videocasts</div>
-
-					<div class="panel-body">
-
-							<table class="table table-condensed">
-    <thead>
-      <tr>
-        <th>Title</th>
-				<th>Publish Date</th>
-      </tr>
-    </thead>
-    <tbody>
-			@foreach ($posts as $post)
-			<tr>
-				<td><a href="/posts/{{$post->slug}}">{{ $post->title }}</a></td>
-				<td><em>{{ $post->published_at->format('M jS Y g:ia') }}</em></td>
-			</tr>
-			@endforeach
-
-    </tbody>
-  </table>
-
-
-					{!! $posts->links() !!}
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<div class="panel panel-primary">
-					<div class="panel-heading"><i class="fa fa-btn fa-video-camera"></i>Code Tools Videocasts</div>
-
-					<div class="panel-body">
-
-							<table class="table table-condensed">
-    <thead>
-      <tr>
-        <th>Title</th>
-				<th>Publish Date</th>
-      </tr>
-    </thead>
-    <tbody>
-			@foreach ($posts as $post)
-			<tr>
-				<td><a href="/posts/{{$post->slug}}">{{ $post->title }}</a></td>
-				<td><em>{{ $post->published_at->format('M jS Y g:ia') }}</em></td>
-			</tr>
-			@endforeach
-
-    </tbody>
-  </table>
-
-
-					{!! $posts->links() !!}
 					</div>
 				</div>
 			</div>

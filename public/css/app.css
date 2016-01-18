@@ -9031,3 +9031,10 @@ body {
 .text-success {
   color: #adce42;
 }
+
+.latest-screen-casts:hover {
+  box-shadow: 10px 10px 5px #888888;
+  height: 90px;
+  width: 90px;
+  border-style: groove;
+}
