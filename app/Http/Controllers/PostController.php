@@ -23,4 +23,16 @@ class PostController extends Controller
 
         return view('home', compact('posts'));
     }
+    public function create(Request $request){
+      $destinationPath =  public_path('vids/');
+      $filename = time().'.'.$request->file('video')->guessExtension();
+      $request->file('video')->move($destinationPath,$filename);
+      Post::Create([
+        'content' => $filename,
+        'description' => $request->description,
+        'category_id' => $request->category_id,
+        'premium' => $request->premium
+        ]);
+
+    }
 }

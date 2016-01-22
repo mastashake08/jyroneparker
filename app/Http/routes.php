@@ -60,6 +60,7 @@ Route::get('sitemap', function(){
 
 
 Route::group(['middleware' => 'web'], function () {
+		Route::post('posts','PostController@create');
 	  Route::get('posts/{slug}','PostController@getPost');
 
     Route::get('home', ['middleware' => 'auth', 'uses' => 'PostController@index']);

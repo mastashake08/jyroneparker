@@ -7,6 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
   protected $dates = ['published_at'];
+  protected $fillable = [
+    'category_id',
+    'description',
+    'content',
+    'premium'
+  ];
 
   public function setTitleAttribute($value)
   {

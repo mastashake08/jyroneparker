@@ -53,7 +53,7 @@
         <div class="row splash-nav">
             <div class="col-md-10 col-md-offset-1">
                 <div class="pull-left splash-brand">
-                    <i class="fa fa-btn fa-code"></i>Parker Code Academy
+                    <i class="fa fa-btn fa-code"></i>Parker Code Academy 
                 </div>
 
                 <div class="navbar-header">
