@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <script type="application/ld+json">
 {
   "@context" : "http://schema.org",
   "@type": "Person",
   "name": "Jyrone Parker",
+  "telephone": "(859)-402-4863",
+  "email": "mailto:jyrone.parker@gmail.com",
+  "image": "img/jyrone.jpg",
+  "jobTitle": "CEO/Lead Engineer",
+  "worksFor": "J Computer Solutions LLC",
+  "birthDate": "1992-01-08",
+  "birthPlace": "Louisville, Kentucky",
+  "nationality": "United States",
+  "description": "Jyrone Parker is an American software developer and entrepreneur from Louisville, Kentucky. He is founder and owner of J Computer Solutions LLC, a consulting company that also writes web and hybrid mobile apps. His personal website JyroneParker.com is a free online code school whose mission is to teach valuable coding skills to everyone who wants to learn.",
   "url" : "http://www.jyroneparker.com",
   "sameAs" : [
     "https://www.facebook.com/jyrone.parker.1",

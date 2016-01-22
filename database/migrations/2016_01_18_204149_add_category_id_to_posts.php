@@ -12,7 +12,11 @@ class AddCategoryIdToPosts extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('posts', function (Blueprint $table) {
+            //
+            $table->integer('category_id')->unsigned();
+            $table->foreign('category_id')->references('id')->on('categories');
+        });
     }
 
     /**
@@ -22,6 +26,8 @@ class AddCategoryIdToPosts extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('posts', function (Blueprint $table) {
+            //
+        });
     }
 }

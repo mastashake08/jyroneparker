@@ -16,4 +16,8 @@ class Post extends Model
       $this->attributes['slug'] = str_slug($value);
     }
   }
+
+  public function category(){
+    return $this->belongsTo('App\Category');
+  }
 }
